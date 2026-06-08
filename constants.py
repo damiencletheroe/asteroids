@@ -1,4 +1,10 @@
+# Screen variables
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
-PLAYER_RADIUS = 20
+
+# Global variables
 LINE_WIDTH = 2
+
+# Player variables
+PLAYER_RADIUS = 20
+PLAYER_TURN_SPEED = 300
