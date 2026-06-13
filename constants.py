@@ -1,11 +1,17 @@
-# Screen variables
+# Screen constants
 SCREEN_WIDTH = 1280
 SCREEN_HEIGHT = 720
 
-# Global variables
+# Global constants
 LINE_WIDTH = 2
 
-# Player variables
+# Player constants
 PLAYER_RADIUS = 20
 PLAYER_TURN_SPEED = 300
 PLAYER_SPEED = 200
+
+# Asteroid constants
+ASTEROID_MIN_RADIUS = 20
+ASTEROID_KINDS = 3
+ASTEROID_SPAWN_RATE_SECONDS = 0.8
+ASTEROID_MAX_RADIUS = ASTEROID_MIN_RADIUS * ASTEROID_KINDS

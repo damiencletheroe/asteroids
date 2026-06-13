@@ -2,6 +2,8 @@ import pygame
 from logger import log_state
 from constants import *
 from player import Player
+from asteroid import Asteroid
+from asteroidfield import AsteroidField
 
 def main() -> None:
     print(f"Starting Asteroids with pygame version: {pygame.version.ver}\nScreen width: {SCREEN_WIDTH}\nScreen height: {SCREEN_HEIGHT}")
@@ -15,12 +17,18 @@ def main() -> None:
     # Create sprite groups for batch operations
     updatable = pygame.sprite.Group()
     drawable = pygame.sprite.Group()
+    asteroids = pygame.sprite.Group()
 
     # Add classes to sprite groups
     Player.containers = (updatable, drawable)
+    Asteroid.containers = (updatable, drawable, asteroids)
+    AsteroidField.containers = (updatable)
 
     # Create player instance
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+
+    # Create asteroid field instance
+    asteroid_field = AsteroidField()
     
     # Main game loop
     while True:
