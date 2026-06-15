@@ -1,4 +1,5 @@
 from constants import ASTEROID_MIN_RADIUS
+from logger import log_event
 
 class Score:
     POINTS_VALUES = {
@@ -15,4 +16,5 @@ class Score:
 
     def add_points(self, asteroid):
         points = self.calculate_points(asteroid)
+        log_event(f"points_scored: {points}")
         self.current_score += points

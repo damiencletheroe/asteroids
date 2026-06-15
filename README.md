@@ -9,14 +9,17 @@
 - Large Asteroids: 20 points
 
 ### Tasks
-- [] Track scoring in variable and log to game state / game events
-- [] Display current score in top left corner
+- [x] Track scoring in variable and log to game state / game events
+- [x] Display current score in top left corner
 
 ## Gameplay
+### Tasks
 - [] Implement multiple lives and respawning
 - [] Add an explosion effect for the asteroids
 - [] Add acceleration to the player movement
 - []Make the objects wrap around the screen instead of disappearing
 
 ## Visuals
+### Tasks
 - [] Add a title screen
+- [] Add asteroid explosion animation
